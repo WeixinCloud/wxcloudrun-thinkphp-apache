@@ -14,16 +14,14 @@
 ## 目录结构说明
 ~~~
 .
-├── Dockerfile                  构建 nginx-fpm 环境镜像使用（默认）
-├── Dockerfile-Apache           构建 apache 环境镜像使用（默认）
+├── Dockerfile           Dockerfile 文件
 ├── README.md                   README 文件
 ├── app                         应用目录
 │   ├── controller              控制器目录
 │   ├── model                   模型目录
 │   └── view                    视图目录
 ├── conf                        配置文件
-│   ├── apache.conf             apache 配置
-│   └── nginx.conf              nginx 配置
+│   └── apache.conf             apache 配置
 ├── config                      thinkphp 配置
 ├── container.config.json       微信云托管流水线配置
 ├── public                      WEB目录（对外访问目录）
