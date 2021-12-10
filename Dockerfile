@@ -3,6 +3,7 @@
 FROM alpine:3.13
 
 # 安装依赖包，如需其他依赖包，请到alpine依赖包管理(https://pkgs.alpinelinux.org/packages?name=php8*imagick*&branch=v3.13)查找。
+RUN sed -i -e 's/http:/https:/' /etc/apk/repositories
 RUN apk add --update --no-cache \
     php7 \
     php7-json \
